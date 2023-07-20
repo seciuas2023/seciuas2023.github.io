@@ -49,7 +49,7 @@ navbar:
   - id: 2
     label: Submission
     path: /submission.html
-    visible: True
+    visible: False
   - id: 3
     label: Registration
     path: /registration.html
