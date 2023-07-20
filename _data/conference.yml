@@ -7,33 +7,18 @@ date: November 7, 2023
 logo_path:
 slideshow:
   - id: 0
-    image_path:
+    image_path: ./assets/images/slideshow/nagoya0.jpg
     description:
     photographer_name:
     photographer_link:
     active: True
   - id: 1
-    image_path:
+    image_path: ./assets/images/slideshow/nagoya1.jpg
     description:
     photographer_name:
     photographer_link:
   - id: 2
-    image_path:
-    description:
-    photographer_name:
-    photographer_link:
-  - id: 3
-    image_path:
-    description:
-    photographer_name:
-    photographer_link:
-  - id: 4
-    image_path:
-    description:
-    photographer_name:
-    photographer_link:
-  - id: 5
-    image_path:
+    image_path: ./assets/images/slideshow/nagoya2.jpg
     description:
     photographer_name:
     photographer_link:
