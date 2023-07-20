@@ -12,8 +12,27 @@ slide_id: 1
                 {% if site.data.conference.program_chair %}
                 {% for committee in site.data.conference.program_chair %}
                  <div class="card-block bg-faded committee">
+                    <!-- 
                     <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
                     <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                    -->
+                    <p><strong>Jianfeng Ma</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">Xidian University, China</p>
+                    <ul>
+                        <div style="float:left; clear: both;" align="left">
+                            <img src="./assets/images/lwj.png" width="120" alt="" hspace="8">
+                        </div>
+                        Prof. Ma’s research interests include the wireless network security protocols, data 
+                        security and the security design of mobile intelligent systems. He has published more than 200 
+                        papers, like IEEE Transactions on Information Forensics and Security, IEEE Transactions on 
+                        Dependable and Secure Computing, IEEE Transactions on Dependable and Secure Computing, 
+                        IEEE Transactions on Computers, IEEE INFOCOM. He has been continuously selected as a 
+                        highly cited scholar in 2019 and 2020. He has been funded by the National Natural Science 
+                        Foundation of China, National Key R&D Program of China in wireless network security, 
+                        unmanned system security and other aspects. Prof. Ma has been Authorized 78 technical 
+                        invention patents, formulated 3 ITU safety standards, 1 national standard. He is a Member of 
+                        IEEE.
+                    </ul>
                 </div>  
                 {% endfor %}
                 {% else %}
