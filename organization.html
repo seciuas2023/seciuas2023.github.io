@@ -9,8 +9,6 @@ slide_id: 1
             <!--######### Program Chair ##########-->
             <div class="card">
                 <div class="card-header text-white bg-inverse"><strong>Chairs</strong></div>
-                {% if site.data.conference.program_chair %}
-                {% for committee in site.data.conference.program_chair %}
                  <div class="card-block bg-faded committee">
                     <!-- 
                     <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
@@ -20,7 +18,7 @@ slide_id: 1
                     <p class="card-subtitle text-muted" style="font-size: 90%;">Xidian University, China</p>
                     <ul>
                         <div style="float:left; clear: both;" align="left">
-                            <img src="./assets/images/lwj.png" width="120" alt="" hspace="8">
+                            <img src="./assets/images/mjf.png" width="120" alt="" hspace="8">
                         </div>
                         Prof. Ma’s research interests include the wireless network security protocols, data 
                         security and the security design of mobile intelligent systems. He has published more than 200 
@@ -34,7 +32,30 @@ slide_id: 1
                         IEEE.
                     </ul>
                 </div>  
-                {% endfor %}
+                <div class="card-block bg-faded committee">
+                    <p><strong>Xiaohong Jiang</strong><p>
+                    <p class="card-subtitle text-muted" style="font-size: 90%;">Future University Hakodate, Japan</p>
+                    <ul>
+                        <div style="float:left; clear: both;" align="left">
+                            <img src="./assets/images/jxh.png" width="120" alt="" hspace="8">
+                        </div>
+                        Dr. Jiang’s research interests include computer communications networks, mainly 
+                        wireless networks and optical networks, interconnection networks for massive parallel computing 
+                        systems, routers/switches design for high performance networks, network coding for 
+                        wireless networks, VoIP over wireless networks, network security, VLSI/WSI systems, etc. He 
+                        has established the long last cooperation with top researchers in USA, Italy, Canada and China. 
+                        He has supervised 5 post doctoral fellows and 25 PhD students from Japan, China, Egypt, 
+                        Vietnam, Iran, etc. He has over 11 grants including Japan/USA NSF grant, Japan NSF grant and 
+                        Japan JST grant, and has published over 250 technical papers at premium international journals 
+                        and conferences, which include over 40 papers published in top IEEE journals and top IEEE 
+                        conferences, like IEEE/ACM Transactions on Networking, IEEE Journal of Selected Areas on 
+                        Communications, IEEE Transactions on Parallel and Distributed Systems, IEEE Transactions 
+                        on Communications, IEEE INFOCOM. Dr. Jiang was the winner of the Best Paper Award and 
+                        Outstanding Paper Award of IEEE HPCC 2014, IEEE WCNC 2012, IEEE WCNC 2008, IEEE ICC 
+                        2005-Optical Networking Symposium, and IEEE/IEICE HPSR 2002. He is a Senior Member of 
+                        IEEE, a Member of ACM and IEICE.
+                    </ul>
+                </div>  
                 {% else %}
                 <div class="card-block bg-faded committee">
                     <p class="card-title">TBA</p>
