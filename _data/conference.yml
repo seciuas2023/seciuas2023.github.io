@@ -47,22 +47,18 @@ navbar:
     path: /cfp.html
     visible: True
   - id: 2
-    label: Submission
-    path: /submission.html
-    visible: False
-  - id: 3
     label: Registration
     path: /registration.html
     visible: True
-  - id: 4
+  - id: 3
     label: Organization
     path: /organization.html
     visible: True
-  - id: 5
+  - id: 4
     label: Programs
     path: /program.html
     visible: Ture
-  - id: 6
+  - id: 5
     label: Venue
     path: /venue.html
     visible: True
