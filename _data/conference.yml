@@ -43,29 +43,29 @@ navbar:
     path: /
     visible: True
   - id: 1
-    label: Organization
-    path: /organization.html
-    visible: True
-  - id: 2
     label: Call for Papers
     path: /cfp.html
     visible: True
-  - id: 3
+  - id: 2
     label: Submission
     path: /submission.html
-    visible: False
-  - id: 4
-    label: Programs
-    path: /program.html
-    visible: False
-  - id: 5
-    label: Venue
-    path: /venue.html
-    visible: False
-  - id: 6
+    visible: True
+  - id: 3
     label: Registration
     path: /registration.html
-    visible: False
+    visible: True
+  - id: 4
+    label: Organization
+    path: /organization.html
+    visible: True
+  - id: 5
+    label: Programs
+    path: /program.html
+    visible: Ture
+  - id: 6
+    label: Venue
+    path: /venue.html
+    visible: True
 deadlines:
   - date: 2023-9-30
     timezone:
