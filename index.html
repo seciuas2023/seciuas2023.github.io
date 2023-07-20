@@ -52,7 +52,7 @@ slide_id: 0
                 {% if site.data.conference.program_chair %}
                 {% for committee in site.data.conference.program_chair %}
                  <div class="card-block bg-faded committee">
-                    <p><strong>{{ committee.name }}</strong> <p class="card-subtitle text-muted" style="font-size: 90%;">{{ committee.org }}</p>
+                    <p><strong>{{ committee.name }}</strong> {{ committee.org }}</p>
                 </div>  
                 {% endfor %}
                 {% else %}
