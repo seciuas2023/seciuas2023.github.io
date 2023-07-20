@@ -9,6 +9,8 @@ slide_id: 1
             <!--######### Program Chair ##########-->
             <div class="card">
                 <div class="card-header text-white bg-inverse"><strong>Chairs</strong></div>
+                {% if site.data.conference.program_chair %}
+                <!-- {% for committee in site.data.conference.program_chair %}-->
                  <div class="card-block bg-faded committee">
                     <!-- 
                     <p><a href="{{ committee.homepage }}"><strong>{{ committee.name }}</strong></a><p>
@@ -56,6 +58,7 @@ slide_id: 1
                         IEEE, a Member of ACM and IEICE.
                     </ul>
                 </div>  
+                <!-- {% endfor %}-->
                 {% else %}
                 <div class="card-block bg-faded committee">
                     <p class="card-title">TBA</p>
