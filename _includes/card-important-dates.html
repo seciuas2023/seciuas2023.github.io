@@ -15,7 +15,14 @@
                                 {% if deadline.timezone %}
                                 {{ deadline.date | date: "%B %e, %Y." }} ({{ deadline.timezone }})
                                 {% else %}
-                                {{ deadline.date | date: "%B %e, %Y." }}
+                                    {% if deadline.newdata %}
+                                    <del>
+                                         {{ deadline.date | date: "%B %e, %Y." }}
+                                    </del>
+                                         {{ deadline.newdate | date: "%B %e, %Y." }}
+                                    {% else %}
+                                         {{ deadline.date | date: "%B %e, %Y." }}
+                                    {% endif %}
                                 {% endif %}</p>
                             {% if deadline.pass_due %}
                             </del>
