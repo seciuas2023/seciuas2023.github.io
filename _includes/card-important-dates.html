@@ -15,7 +15,7 @@
                                 {% if deadline.timezone %}
                                 {{ deadline.date | date: "%B %e, %Y." }} ({{ deadline.timezone }})
                                 {% else %}
-                                    {% if deadline.newdata %}
+                                    {% if deadline.newdate %}
                                     <del>
                                          {{ deadline.date | date: "%B %e, %Y." }}
                                     </del>
