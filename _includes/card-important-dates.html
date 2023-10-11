@@ -17,9 +17,9 @@
                                 {% else %}
                                     {% if deadline.newdate %}
                                     <del>
-                                         {{ deadline.date | date: "%B %e, %Y" }}
+                                         {{ deadline.date | date: "%B %e, %Y. " }}
                                     </del>
-                                         {{ deadline.newdate | date: " delay to %B %e, %Y." }}
+                                         {{ deadline.newdate | date: "Delay to %B %e, %Y." }}
                                     {% else %}
                                          {{ deadline.date | date: "%B %e, %Y." }}
                                     {% endif %}
