@@ -17,11 +17,11 @@
                                 {% else %}
                                     {% if deadline.newdate %}
                                     <del>
-                                         {{ deadline.date | date: "%B %e, %Y. " }}
+                                         {{ deadline.date | date: "%B %e, %Y " }}
                                     </del>
-                                         {{ deadline.newdate | date: "Delay to %B %e, %Y." }}
+                                         {{ deadline.newdate | date: "%B %e, %Y (Extended)" }}
                                     {% else %}
-                                         {{ deadline.date | date: "%B %e, %Y." }}
+                                         {{ deadline.date | date: "%B %e, %Y" }}
                                     {% endif %}
                                 {% endif %}</p>
                             {% if deadline.pass_due %}
