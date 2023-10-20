@@ -12,10 +12,16 @@ slide_id: 1
             <h5 class="schedule-table-heading">{{ day.dateReadable }} - Day {{ forloop.index }}</h5>
             <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->
             <table>
+            <thead>
+                    <tr style="background:#BBBBBB; text-align:center;">
+                        <th>Time</th>
+                        <th>Title/Presenter</th>
+                    </tr>
+            </thead>
             {% for timeslot in day.timeslots %}
                 <tbody>
                     <tr>
-                        <td style="background:#F0FFFF;" class="text-center">
+                        <td class="text-center">
                             <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
                         </td>
                         {% if timeslot.type == "service" %}
@@ -24,7 +30,7 @@ slide_id: 1
                             </td>
                         {% else %}
                             <!-- <td class="bg-primary text-center"> -->
-                            <td style="background:#E0FFFF;">
+                            <td>
                                 <b>{{timeslot.title}}</b><br/>
                                 {% if timeslot.speaker %}
                                     by {{timeslot.speaker}}
