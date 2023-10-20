@@ -20,14 +20,17 @@ slide_id: 1
             {% for timeslot in day.timeslots %}
                 <tbody>
                     <tr>
-                        <td class="text-center">
-                            <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
-                        </td>
                         {% if timeslot.type == "service" %}
+                            <td style="background:#FFFACD;" class="text-center">
+                                <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
+                            </td>
                             <td style="background:#FFFACD;" class="text-center text-muted">
                                 <b>{{timeslot.title}}</b>
                             </td>
                         {% else %}
+                            <td class="text-center">
+                                <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
+                            </td>
                             <!-- <td class="bg-primary text-center"> -->
                             <td>
                                 <b>{{timeslot.title}}</b><br/>
