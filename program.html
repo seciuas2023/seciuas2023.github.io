@@ -10,8 +10,7 @@ slide_id: 1
         {% for day in site.data.schedule %}
         <div>
             <h5 class="schedule-table-heading">{{ day.dateReadable }} - Day {{ forloop.index }}</h5>
-            <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->
-            <table>
+            <table class="table table-bordered table-striped table-hover table-responsive table-sm">
             <thead>
                     <tr style="background:#BBBBBB; text-align:center;">
                         <th>Time</th>
@@ -26,7 +25,7 @@ slide_id: 1
                         </td>
                         {% if timeslot.type == "service" %}
                             <td style="background:#FFFACD;" class="text-center text-muted">
-                                {{timeslot.title}}
+                                <b>{{timeslot.title}}</b>
                             </td>
                         {% else %}
                             <!-- <td class="bg-primary text-center"> -->
