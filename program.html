@@ -15,24 +15,24 @@ slide_id: 1
             {% for timeslot in day.timeslots %}
                 <tbody>
                     <tr>
-                        <th style="background:#F0FFFF;" class="text-center">
+                        <td style="background:#F0FFFF;" class="text-center">
                             <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
-                        </th>
+                        </td>
                         {% if timeslot.type == "service" %}
-                            <th style="background:#FFFACD;" class="text-center text-muted">
+                            <td style="background:#FFFACD;" class="text-center text-muted">
                                 {{timeslot.title}}
-                            </th>
+                            </td>
                         {% else %}
-                            <!-- <th class="bg-primary text-center"> -->
-                            <th style="background:#E0FFFF;">
+                            <!-- <td class="bg-primary text-center"> -->
+                            <td style="background:#E0FFFF;">
                                 <b>{{timeslot.title}}</b><br/>
                                 {% if timeslot.speaker %}
                                     by {{timeslot.speaker}}
                                 {% endif %}
                                 {% if timeslot.chair %}
-                                    <h6>Session chair:{{timeslot.chair}}</h6>
+                                    Session chair:{{timeslot.chair}}
                                 {% endif %}
-                            </th>
+                            </td>
                         {% endif %}
                     </tr>
                     {% if timeslot.events %}
