@@ -13,31 +13,29 @@ slide_id: 1
             <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->
             <table>
             {% for timeslot in day.timeslots %}
-                    <thead>
-                            <tr>
-                                <th style="background:#F0FFFF;" class="text-center">
-                                    <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
-                                </th>
-                                {% if timeslot.type == "service" %}
-                                    <th style="background:#FFFACD;" class="text-center text-muted">
-                                            {{timeslot.title}}
-                                    </th>
-                                {% else %}
-                                    <!-- <th class="bg-primary text-center"> -->
-                                    <th style="background:#E0FFFF;">
-                                            <b>{{timeslot.title}}</b><br/>
-                                            {% if timeslot.speaker %}
-                                            by <i>{{timeslot.speaker}}</i>
-                                            {% endif %}
-                                            {% if timeslot.chair %}
-                                                <h6>Session chair:{{timeslot.chair}}</h6>
-                                            {% endif %}
-                                    </th>
+                <tbody>
+                    <tr>
+                        <th style="background:#F0FFFF;" class="text-center">
+                            <dev>{{timeslot.startTime}}-{{timeslot.endTime}}</dev>
+                        </th>
+                        {% if timeslot.type == "service" %}
+                            <th style="background:#FFFACD;" class="text-center text-muted">
+                                {{timeslot.title}}
+                            </th>
+                        {% else %}
+                            <!-- <th class="bg-primary text-center"> -->
+                            <th style="background:#E0FFFF;">
+                                <b>{{timeslot.title}}</b><br/>
+                                {% if timeslot.speaker %}
+                                    by <i>{{timeslot.speaker}}</i>
                                 {% endif %}
-                            </tr>
-                    </thead>
+                                {% if timeslot.chair %}
+                                    <h6>Session chair:{{timeslot.chair}}</h6>
+                                {% endif %}
+                            </th>
+                        {% endif %}
+                    </tr>
                     {% if timeslot.events %}
-                    <tbody>
                         {% for event in timeslot.events %}
                             <tr>
                                 <td width="20%">
@@ -48,8 +46,8 @@ slide_id: 1
                                 </td>
                             </tr>
                         {% endfor %}
-                    </tbody>
                     {% endif %}
+                </tbody>
             {% endfor %}
             </table>
         </div>
