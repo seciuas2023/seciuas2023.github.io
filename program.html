@@ -10,7 +10,8 @@ slide_id: 1
         {% for day in site.data.schedule %}
         <div>
             <h4 class="schedule-table-heading">{{ day.dateReadable }} - Day {{ forloop.index }}</h4>
-            <table class="table table-bordered table-striped table-hover table-responsive table-sm">
+            <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->
+            <table>
             {% for timeslot in day.timeslots %}
                     <thead>
                             <tr>
@@ -23,10 +24,10 @@ slide_id: 1
                                     </th>
                                 {% else %}
                                     <!-- <th class="bg-primary text-center"> -->
-                                    <th style="background:#E0FFFF;" class="text-center">
+                                    <th style="background:#E0FFFF;">
                                             <b>{{timeslot.title}}</b><br/>
                                             {% if timeslot.speaker %}
-                                            <i>{{timeslot.speaker}}</i>
+                                            by <i>{{timeslot.speaker}}</i>
                                             {% endif %}
                                             {% if timeslot.chair %}
                                                 <h6>Session chair:{{timeslot.chair}}</h6>
