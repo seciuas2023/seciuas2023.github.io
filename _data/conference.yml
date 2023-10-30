@@ -58,7 +58,7 @@ deadlines:
     pass_due: True
   - date: 2023-10-30
     text: Camera-ready submission
-    pass_due: False
+    pass_due: True
 news:
 sponsors:
   - name: ACM
